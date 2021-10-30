@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:url(Taj.jpg);
+    opacity: 95%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    background: rgba(0,0,0,0.4);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+.logo{
+    font-size: 27px;
+    width: 25%;
+    text-align: center;
+    /* background: red; */
+}
+.menu{
+    width: 50%;
+    /* background: yellow; */
+    display: flex;
+    justify-content: space-around;
+}
+.menu a{
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: x-large;
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    color: white;
+}
+section h3{
+    font-size: 45px;
+    font-weight: 1000;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 3px black;
+}
+section h1{
+    margin: 30px 0 20px 0px;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px black;
+    text-transform: uppercase;
+}
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 5px black;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    
+}
+.button1{
+    background: white;
+    color: black;
+}
+.button2{
+    background: orange ;
+    color:papayawhip
+}
+.change_content:after{
+    content: '' ;
+    animation: changetext 10s infinite linear;
+    color: orange;
+}
+@keyframes changetext{
+    0%{content:"Darjeeling";}
+    20%{content:"Agra";}
+    40%{content:"jaipur";}
+    60%{content:"Indore";}
+    80%{content:"Mumbai";}
+    100%{content:"Delhi";}
+} 
